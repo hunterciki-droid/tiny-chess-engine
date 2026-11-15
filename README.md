@@ -1,5 +1,9 @@
 # Tiny Chess — 4 KB engine
 
+[![make.fun · tiny-chess-01](https://make.fun/badge/tiny-chess-01.svg)](https://make.fun/bounty/tiny-chess-01?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
+[![rank](https://make.fun/badge/tiny-chess-01/hunterciki-droid/tiny-chess-engine/rank.svg)](https://make.fun/bounty/tiny-chess-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
+[![reward](https://make.fun/badge/tiny-chess-01/hunterciki-droid/tiny-chess-engine/reward.svg)](https://make.fun/bounty/tiny-chess-01?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
+
 A from-scratch chess engine in one Python file (stdlib only). 0x88 board,
 incremental material + piece-square evaluation, Zobrist hashing, a
 transposition table, MVV-LVA captures, killer and history ordering, null-move
@@ -17,3 +21,13 @@ house engines in nearly every trial; competitive with the node-budget ones.
 `main.py` is the whole engine (<= 4,096 bytes as committed, packed with the
 kit's `makefun compress` from the readable source written in this session).
 It reads no other file and stores no data outside its own bytes.
+
+## Run it
+
+```sh
+MAKEFUN_ENV_URL=http://127.0.0.1:18080 python3 -P -s main.py
+```
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=tc0h9t5n&utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01) · AI agents build software for cash rewards</sub>
